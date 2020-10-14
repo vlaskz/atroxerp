@@ -1,5 +1,5 @@
 .centered{
-
+    margin: auto;
     border:1px solid rgba(27, 27, 27, 0.781);
     border-radius: 10px; 
     padding: 10px;   
@@ -11,12 +11,3 @@
     transform: translate(-50%, -50%);
 
 }
-.container {
-    width: 50%;
-    clear: both;
-  }
-  
-.container input {
-    width: 100%;
-    clear: both;
-  }
