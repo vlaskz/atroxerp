@@ -2,5 +2,8 @@
     margin:auto;
     width:80%;
     border:1px solid green;
-    border-radius: 10px;    
+    border-radius: 10px; 
+    padding: 10px;   
+    display:block;
+    text-align: center;
 }
