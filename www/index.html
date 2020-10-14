@@ -6,8 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
     <title>AtroxERP</title>
-    <link rel="stylesheet" href="./style/style.css">
-    <script src="./scripts/script.js"></script>
+    
     <!-- Bootstrap -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous">
     
@@ -17,25 +16,32 @@
       <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
+
+    <link rel="stylesheet" href="./style/style.css">
+    <script src="./scripts/script.js"></script>
   </head>
   <body>
 
 
     <div class="centered container">
-      <h1>Bem vindos a Atrox</h1>
-      <p>Este será nosso ponto de partida, por isso, por favor insira suas credenciais abaixo:</p>
+      <div class="page-header">
+        <h1>Bem vindos a Atrox</h1>
+        <p>Este será nosso ponto de partida, por isso, por favor insira suas credenciais abaixo:</p>
+      </div>
+      
      <div class="content">
       <form action="/login" method="POST">
-        <div class="form-group"></label>
-          <input type="email" class="form-control" id="usermail" name="usermail" aria-describedby="emailHelp" placeholder="Insira seu email">
+        <div class="form-group">
+          <label for="usermail">Email</label>
+          <input type="email" class="form-control form-control-lg" id="usermail" name="usermail" aria-describedby="emailHelp" placeholder="Insira seu email">
           <small id="emailHelp" class="form-text text-muted">Usaremos o seu email como login. Não será compartilhado com outros.</small>
         </div>
         <div class="form-group">
           <label for="password">Senha</label>
-          <input type="password" class="form-control" id="password" name="password" placeholder="Insira sua senha">
+          <input type="password" class="form-control form-control-lg" id="password" name="password" placeholder="Insira sua senha">
         </div>
         
-        <button type="submit" class="btn btn-primary">Acessar</button>
+        <button type="submit" class="btn btn-primary btn-lg">Acessar</button>
       </form>
      </div> 
     </div> 
