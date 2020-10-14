@@ -19,24 +19,26 @@
     <![endif]-->
   </head>
   <body>
+
+
     <div class="centered container">
       <h1>Bem vindos a Atrox</h1>
       <p>Este será nosso ponto de partida, por isso, por favor insira suas credenciais abaixo:</p>
      <div class="content">
-      <form>
+      <form action="/login" method="POST">
         <div class="form-group"></label>
-          <input type="email" class="form-control" id="usermail" aria-describedby="emailHelp" placeholder="Insira seu email">
+          <input type="email" class="form-control" id="usermail" name="usermail" aria-describedby="emailHelp" placeholder="Insira seu email">
           <small id="emailHelp" class="form-text text-muted">Usaremos o seu email como login. Não será compartilhado com outros.</small>
         </div>
         <div class="form-group">
           <label for="password">Senha</label>
-          <input type="password" class="form-control" id="password" placeholder="Insira sua senha">
+          <input type="password" class="form-control" id="password" name="password" placeholder="Insira sua senha">
         </div>
         
         <button type="submit" class="btn btn-primary">Acessar</button>
       </form>
      </div> 
-    </div>
+    </div> 
     
 
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->

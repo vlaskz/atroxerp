@@ -14,7 +14,7 @@ app.get('/', (req,res)=>{
 })
 
 app.post('/login',(req, res)=>{
-    console.log(`Say hello to ${req.body.username}\nwith password ${req.body.password}`)
+    console.log(`Say hello to ${req.body.usermail}\nwith password ${req.body.password}`)
     res.sendStatus(200);
 })
 
