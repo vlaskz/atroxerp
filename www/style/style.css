@@ -1,0 +1,6 @@
+.centered{
+    margin:auto;
+    width:80%;
+    border:1px solid green;
+    border-radius: 10px;    
+}
