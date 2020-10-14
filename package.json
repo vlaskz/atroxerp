@@ -1,0 +1,19 @@
+{
+  "name": "atroxerp",
+  "version": "1.0.0",
+  "description": "atroxerp",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vlaskz/atroxerp.git"
+  },
+  "author": "Isaias C. Velasquez",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/vlaskz/atroxerp/issues"
+  },
+  "homepage": "https://github.com/vlaskz/atroxerp#readme"
+}
