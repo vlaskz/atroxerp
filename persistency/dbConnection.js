@@ -1,4 +1,4 @@
-const { Pool} = require('pg')
+const {Pool} = require('pg')
 
 const pool = new Pool({
     user:'postgres',
@@ -8,7 +8,4 @@ const pool = new Pool({
     port:'5432'
 })
 
-pool.query('select * from empresas', (err, res)=>{
-    console.log(err, res)
-    pool.end();
-})
+exports.pool = pool
