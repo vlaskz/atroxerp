@@ -10,7 +10,7 @@ app.use(bodyParser.urlencoded({extended:true}))
 app.use(express.static('./www/'))
 
 app.get('/', (req,res)=>{
-    res.sendFile(path.join(__dirname+'/www/login.html'))
+    res.sendFile(path.join(__dirname+'/www/views/login.html'))
 })
 
 app.post('/login_api',(req, res)=>{
