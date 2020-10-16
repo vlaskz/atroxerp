@@ -22,6 +22,10 @@ app.post('/login_api',(req, res)=>{
     })
 })
 
+app.get('/connect', (req, res)=>{
+    
+})
+
 app.post('/login',(req,res)=>{
     console.log(`Logon attempt from ${req.body.usermail} in ${format(Date.now(), 'dd.MM.yyyy hh:mm:ss')}.`)
     res.sendFile(path.join(__dirname+'/www/dashboard.html'))
