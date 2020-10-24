@@ -4,7 +4,7 @@ const path = require('path')
 const port = process.env.PORT || 3000
 const bodyParser = require('body-parser')
 const format = require('date-fns/format')
-const {pool} = require('./persistency/dbConnection')
+const {pool} = require('./persistence/dbConnection')
 
 app.use(bodyParser.json())
 app.use(bodyParser.urlencoded({extended:true}))
