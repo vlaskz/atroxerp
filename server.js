@@ -6,6 +6,10 @@ server.use(express.static('./www/'))
 server.use(routes)
 
 
+
+
+
+
 server.listen(port, ()=>{
     console.log(`Running wild at ${port}`)
 })

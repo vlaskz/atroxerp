@@ -3,7 +3,8 @@ const router = express.Router();
 const path = require('path')
 const bodyParser = require('body-parser')
 const format = require('date-fns/format')
-const { pool } = require('./persistence/dbConnection')
+const { pool } = require('./persistence/dbConnection');
+const { Usuario }= require('./Usuario/mdlUsuario');
 router.use(bodyParser.urlencoded({extended:true}))
 router.use(bodyParser.json())
 
@@ -15,6 +16,14 @@ router.use((req,res,next)=>{
 
 
 
+
+router.get('/allusers',(req, res)=>{
+    console.log(`[ROUTER]: GET /allusers `)
+    new Usuario().getUsuarios()
+    console.log()
+    res.sendStatus(200)
+})
+    
 router.get('/', (req,res)=>{
     res.sendFile(path.join(__dirname+'/www/views/login.html'))
     console.log(`[ROUTER] GET / `)
