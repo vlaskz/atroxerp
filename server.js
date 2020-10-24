@@ -1,11 +1,11 @@
 const express = require('express')
-const app = express()
+const server = express()
 const port = process.env.PORT || 3000
 const routes = require('./routes')
-app.use(express.static('./www/'))
-app.use(routes)
+server.use(express.static('./www/'))
+server.use(routes)
 
 
-app.listen(port, ()=>{
+server.listen(port, ()=>{
     console.log(`Running wild at ${port}`)
 })
